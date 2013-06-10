@@ -8,19 +8,17 @@ public class EntityMatias extends EntityMob
     {	
     	super(par1World);
     	this.invul=false;
-    	this.texture = "/mob/matias.png";//Set Mob texture
-    	//this.texture = "/mob/mati.png";
-    	this.moveSpeed = 0.5f;//sets how fast this mob moves
+    	this.texture = "/mob/matias.png";
+    	this.moveSpeed = 0.5f;
     	this.isImmuneToFire = true;
         this.experienceValue = 500;
     	 this.setSize(0.9F, 3.3F);
    
          //this.stepHeight = 1.0F;
-    	//below this is all the ai tasks that specify how the mob will behave mess around with it to see what happens
-    	
+
     	this.tasks.addTask(0, new EntityAISwimming(this));
-    	//this.tasks.addTask(1, new EntityAIMatias(this, EntityPlayer.class, this.moveSpeed, false));
-    	this.tasks.addTask(1, new EntityAIAttackOnCollide(this, EntityPlayer.class, this.moveSpeed, false));
+    	this.tasks.addTask(1, new EntityAIMatias(this, EntityPlayer.class, this.moveSpeed, false));
+    	//this.tasks.addTask(1, new EntityAIAttackOnCollide(this, EntityPlayer.class, this.moveSpeed, false));//Ataque normal
     	
     	this.tasks.addTask(2, new EntityAIMoveTwardsRestriction(this, this.moveSpeed));
     	this.tasks.addTask(3, new EntityAIWander(this, this.moveSpeed));
@@ -30,42 +28,43 @@ public class EntityMatias extends EntityMob
     	 
     	}
 
-    	public int func_82193_c(Entity par1Entity) //the amount of damage
+    	public int func_82193_c(Entity par1Entity) //Daño
     	{
     	return 34;
     	}
 
     	protected void fall(float par1) {}
-    	public int getMaxHealth() // Mob health
+    	public int getMaxHealth() // Vida
     	{
     	return 500;
     	}
 
-    	protected String getLivingSound()
+    	protected String getLivingSound() //sonido mientras vive
     	{
     	return "mob.pig.say";
     	
     	}
 
-    	protected String getHurtSound()
+    	protected String getHurtSound()//sonido al ser atacado
     	{
     	return "mob.pig.say";
     	}
 
-    	protected String getDeathSound()
+    	protected String getDeathSound()//sonido al morir
     	{
     	return "mob.pig.death";
     	}
 
-    	protected int getDropItemId()
+    	protected int getDropItemId()//drops
     	{
     		this.dropItem(Block.blockRedstone.blockID, 5);
     		this.dropItem(Block.blockLapis.blockID, 5);
     	return Block.blockDiamond.blockID;
     	}
+    	
     	protected boolean canDespawn()
     	{
-    	return true;
+    	return false;
     	}
    
     	protected boolean isAIEnabled()//Allow your AI task to work?
