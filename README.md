@@ -1,4 +1,4 @@
-MatiasMod
+﻿MatiasMod
 =========
 
 Mod para Minecraft basado en la API Forge que añade un nuevo Mob
@@ -18,6 +18,9 @@ Version 0.9:
 * Un mechero no podra invocar varios mobs a la vez
 * El mechero tendra un nombre u otro dependiendo el idioma
 
+Version 0.9b (Forge):
+* Version especial para la 1.4.7
+* Solucionados algunos bugs en servidores
 
 Version 0.75:
 * Compatible with client and server 1.5.2 (modloader/forge)
