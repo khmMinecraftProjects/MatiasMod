@@ -82,9 +82,8 @@ public class Base {
 		
 		proxy.registerRenderThings();
 
-		Fire = new ItemMatiasFire(idFire).setUnlocalizedName("fire");
+		Fire = new ItemMatiasFire(idFire).setIconCoord(0, 0).setItemName("fire");
 		LanguageRegistry.addName(Fire, fir);
-		
 		GameRegistry.addRecipe(new ItemStack(Fire, 1), new Object[] { 
 			"RRR", "RYB", "BBB",  Character.valueOf('R'), Item.redstone
 			,Character.valueOf('B'), Block.blockLapis

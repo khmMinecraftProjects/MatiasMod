@@ -24,10 +24,11 @@ public class ItemMatiasFire extends ItemFlintAndSteel {
 
 	public ItemMatiasFire(int par1) {
 		super(par1);
+		// TODO Auto-generated constructor stub
 	}
 	public String getTextureFile()
 	{
-        return "/ModMatias/texturas/Items/fire.png";
+		return "/ModMatias/fire.png";
 	}
 
 	public boolean onItemUse(ItemStack par1ItemStack, EntityPlayer par2EntityPlayer, World par3World, int par4, int par5, int par6, int par7, float par8, float par9, float par10)

@@ -1,0 +1,28 @@
+[
+{
+  "modid": "ModMatias",
+  
+"name": "Mod Matias",
+  
+"description": "Mod que incluye un nuevo mob, Matias.",
+"version": "0.98b",
+  
+"mcversion": "1.4.7",
+  
+"logoFile": "/logo.png",
+  
+"url": "http://adf.ly/Q3KR3",
+  
+"updateUrl": "",
+  
+"authors": ["khmDEV"],
+ 
+"credits": "",
+ 
+"parent": "",
+ 
+"screenshots": [],
+  
+"dependencies": []
+}
+]

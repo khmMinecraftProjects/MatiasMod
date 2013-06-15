@@ -7,37 +7,12 @@ Mod para Minecraft basado en la API Forge que añade un nuevo Mob
 CHANGELOG
 ---------
 
-Version 0.9 (Forge):
-* Utilizando Forge
-* Añadida INFO del mod
-* Mejor optimizaciión
-* Solucionado bugs al cerrar minecraft. Usa variables persistentes (NBT)
-* Correcion de bugs de asincronismo. Ahora usa ticks
-* El Whither no le atacara
-* Cambios menores en el huevo de spawn
-* Un mechero no podra invocar varios mobs a la vez
-* El mechero tendra un nombre u otro dependiendo el idioma
+Forge:
+*Version 0.98/b
+*Version 0.9/b
 
-Version 0.9b (Forge):
-* Version especial para la 1.4.7
-* Solucionados algunos bugs en servidores
-
-Version 0.75 (ModLoader):
-* Compatible with client and server 1.5.2 (modloader/forge)
-
-Version 0.74 (ModLoader):
-* Summon Creatures (Dragon, wither) [EXPERIMENTAL]
-* Inmortal when Matias summon creatures
-
-Version 0.6 (ModLoader):
-* Calibrate statistics (healt, attack, experience)
-* Animate arms
-* Rename "Matias Fire" to "flint and Steel of Matias"
-
-Version 0.5 (ModLoader):
-* Modeling Mob
-* Programing Mob
-* Totem summon Matias
-* Add Matias Fire Item
-* Add Matias's egg
-
+Modloade:
+*Version 0.75
+*Version 0.74
+*Version 0.6
+*Version 0.5

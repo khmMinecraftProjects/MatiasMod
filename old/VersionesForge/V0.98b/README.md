@@ -3,7 +3,7 @@
 
 Mod para Minecraft basado en la API Forge que añade un nuevo Mob
 
-Version 0.98:
+Version 0.98b:
 * Solucionado bugs en servidores
 * Añadido fichero de configuracion
 * Optimizado
