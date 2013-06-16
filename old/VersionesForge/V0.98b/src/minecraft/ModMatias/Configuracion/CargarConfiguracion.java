@@ -23,6 +23,9 @@ public class CargarConfiguracion {
             Datos.t3 = config.get(CATEGORY_GENERAL,Datos.Rt3,Datos.Ft3).getInt();
             Datos.MatiasHealt = config.get(CATEGORY_GENERAL,Datos.RMatiasHealt,Datos.FMatiasHealt).getInt();
             Datos.Idioma = config.get(CATEGORY_GENERAL,Datos.RIdioma,Datos.FIdioma).getName();
+            Datos.MatiasEgg = config.get(CATEGORY_GENERAL,Datos.RMatiasEgg,Datos.FMatiasEgg).getBoolean(true);
+            Datos.WitherEgg = config.get(CATEGORY_GENERAL,Datos.RWitherEgg,Datos.FWitherEgg).getBoolean(true);
+            Datos.DragonEgg = config.get(CATEGORY_GENERAL,Datos.RDragonEgg,Datos.FDragonEgg).getBoolean(true);
 
          
 		}catch(Exception e){

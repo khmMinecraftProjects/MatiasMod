@@ -11,6 +11,9 @@ public class Datos {
 	public static int DragonID;
 	public static int WitherID;
 	public static String Idioma;
+	public static boolean MatiasEgg;
+	public static boolean DragonEgg;
+	public static boolean WitherEgg;
 
 
 	public static final int FidMechero=558;
@@ -23,6 +26,9 @@ public class Datos {
 	public static final int Ft3=1000;
 	public static final int FMatiasHealt=500;
 	public static final String FIdioma="ES";
+	public static final boolean FMatiasEgg=true;
+	public static final boolean FDragonEgg=false;
+	public static final boolean FWitherEgg=false;
 
 	
 	public static final String RidMechero="Mechero_ID";
@@ -35,7 +41,9 @@ public class Datos {
 	public static final String RWitherID="Dragon_ID";
 	public static final String RDragonID="Wither_ID";
 	public static final String RIdioma="Idioma";
-
+	public static final String RMatiasEgg="egg_matias";
+	public static final String RDragonEgg="egg_dragon";
+	public static final String RWitherEgg="egg_wither";
 
 	
 }

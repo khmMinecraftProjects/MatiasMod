@@ -75,26 +75,23 @@ public class Base {
 	@Init
 	public void init(FMLInitializationEvent event)
 	{
-		int idFire=Datos.idMechero,
-				idMatias=Datos.MatiasID,
-				idDragon=Datos.DragonID,
-				idWither=Datos.WitherID;
+
 		
 		proxy.registerRenderThings();
 
-		Fire = new ItemMatiasFire(idFire).setIconCoord(0, 0).setItemName("fire");
+		Fire = new ItemMatiasFire(Datos.idMechero).setIconCoord(0, 0).setItemName("fire");
 		LanguageRegistry.addName(Fire, fir);
 		GameRegistry.addRecipe(new ItemStack(Fire, 1), new Object[] { 
 			"RRR", "RYB", "BBB",  Character.valueOf('R'), Item.redstone
 			,Character.valueOf('B'), Block.blockLapis
 			,Character.valueOf('Y'), Item.flintAndSteel});
 
-		creaMob(EntityMatias.class,"Matias",1,559,
-				new Color(236, 36, 0),new Color(0,0,205));
-		creaMob(Dragon.class,"Dragon Invocado",2,600,
-				new Color(236, 36, 0),new Color(0,0,205));
-		creaMob(Wither.class,"Wither Invocado",3,601,
-				new Color(236, 36, 0),new Color(0,0,205));
+		creaMob(EntityMatias.class,"Matias",1,Datos.MatiasID,
+				new Color(236, 36, 0),new Color(0,0,205),Datos.MatiasEgg);
+		creaMob(Dragon.class,"Dragon Invocado",2,Datos.DragonID,
+				new Color(236, 36, 0),new Color(0,0,205),Datos.DragonEgg);
+		creaMob(Wither.class,"Wither Invocado",3,Datos.WitherID,
+				new Color(236, 36, 0),new Color(0,0,205),Datos.WitherEgg);
 	}
 
 	@PostInit
@@ -102,11 +99,12 @@ public class Base {
 	{
 	}
 	public void creaMob(Class<?extends Entity> mob,String name
-			,int id,int idM,Color a,Color b){
+			,int id,int idM,Color a,Color b,boolean egg){
 		EntityRegistry.registerModEntity(mob,
 				name,idM, this, 80, 3, true);
-		if(id!=0){
+		
 		EntityList.IDtoClassMapping.put(id, mob);
+		if(egg){
 		EntityList.entityEggs.put(id, new EntityEggInfo(id,
 				a.getRGB(),
 				b.getRGB()));}
